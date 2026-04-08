@@ -27,11 +27,17 @@ export default function Projects() {
             </div>
 
             <div className="font-display font-bold text-xl relative">{p.name}</div>
+            {p.period && (
+              <div className="text-[11px] text-text-dim relative">{p.period}</div>
+            )}
             <p className="text-text-dim text-sm leading-relaxed flex-1 relative">{p.description}</p>
 
             <div className="flex flex-wrap gap-1.5 relative">
               {p.tags.map((t) => (
-                <span key={t} className="text-[11px] px-2 py-0.5 rounded border border-border bg-white/[0.03] text-text-dim">
+                <span
+                  key={t}
+                  className="text-[11px] px-2 py-0.5 rounded border border-border bg-white/[0.03] text-text-dim"
+                >
                   {t}
                 </span>
               ))}

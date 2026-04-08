@@ -12,7 +12,7 @@ const contactLinks = [
 export default function Contact() {
   return (
     <section id="contact" className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
-      <SectionHeader num="05" title="Contact" />
+      <SectionHeader num="06" title="Contact" />
       <div className="bg-surface border border-border rounded-2xl p-10 md:p-14 grid md:grid-cols-2 gap-12 items-center relative overflow-hidden">
         {/* Glow */}
         <div
@@ -34,7 +34,8 @@ export default function Contact() {
             <span className="text-accent">something.</span>
           </h2>
           <p className="text-text-dim text-sm mt-4 leading-relaxed max-w-sm">
-            Open to full-time roles and interesting projects — distributed systems, backend infra, AI tooling. Let&apos;s talk.
+            Open to infrastructure, systems, and AI/ML storage roles. Whether it&apos;s Rust, distributed systems, or
+            cloud-scale services — let&apos;s talk.
           </p>
           <a
             href={`mailto:${personal.email}`}
@@ -53,7 +54,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="flex items-center gap-4 text-text-dim border border-border rounded-lg px-5 py-4 text-sm hover:text-white hover:border-accent/20 hover:bg-accent/[0.04] hover:translate-x-1 transition-all"
             >
-              <div className="w-9 h-9 rounded-lg bg-accent/8 flex items-center justify-center flex-shrink-0">
+              <div className="w-9 h-9 rounded-lg bg-accent/[0.08] flex items-center justify-center flex-shrink-0">
                 <Icon size={15} className="text-accent" />
               </div>
               <div>

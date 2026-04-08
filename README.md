@@ -1,59 +1,40 @@
 # Raj Mandaliya — Portfolio
 
-A personal portfolio website built with **Next.js 14**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**. Deployable to Vercel in one click.
+Personal portfolio built with **Next.js 14**, **TypeScript**, **Tailwind CSS**, and **Lucide React**. One-click deploy to Vercel.
 
 ## 🚀 Quick Start
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/YOUR_USERNAME/portfolio.git
-cd portfolio
-
-# 2. Install dependencies
+# 1. Install dependencies
 npm install
 
-# 3. Run locally
+# 2. Run dev server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000).
 
 ---
 
-## ✏️ Customizing Your Content
+## ✏️ Updating Content
 
-All portfolio content lives in a **single file**:
+Everything lives in one file:
 
 ```
 src/data/portfolio.ts
 ```
 
-Edit that file to update:
-- Personal info (name, email, GitHub, LinkedIn, etc.)
-- Work experience
-- Projects
-- Skills
-- Education
-
-No other files need to change for content updates.
+Edit it to update your name, experience, projects, skills, education, certifications, and contact info. No other files need to change.
 
 ---
 
 ## 🌐 Deploy to Vercel
 
-### Option 1 — Vercel Dashboard (recommended)
-
 1. Push this repo to GitHub
-2. Go to [vercel.com](https://vercel.com) → **New Project**
-3. Import your GitHub repo
-4. Click **Deploy** — zero configuration needed
+2. Go to [vercel.com](https://vercel.com) → **New Project** → Import repo
+3. Click **Deploy** — zero config needed
 
-### Option 2 — Vercel CLI
-
-```bash
-npm i -g vercel
-vercel
-```
+Every `git push` after that auto-deploys.
 
 ---
 
@@ -62,9 +43,9 @@ vercel
 ```
 src/
 ├── app/
-│   ├── globals.css       # Global styles + Tailwind
-│   ├── layout.tsx        # Root layout + metadata
-│   └── page.tsx          # Main page (assembles all sections)
+│   ├── globals.css         # Tailwind + global styles
+│   ├── layout.tsx          # Root layout + metadata
+│   └── page.tsx            # Assembles all sections
 ├── components/
 │   ├── Navbar.tsx
 │   ├── Hero.tsx
@@ -72,22 +53,22 @@ src/
 │   ├── Projects.tsx
 │   ├── Skills.tsx
 │   ├── Education.tsx
+│   ├── Certifications.tsx
 │   ├── Contact.tsx
 │   ├── Footer.tsx
 │   └── SectionHeader.tsx
 └── data/
-    └── portfolio.ts      # ← Edit this file to update content
+    └── portfolio.ts        # ← Edit this to update content
 ```
 
 ---
 
 ## 🛠️ Tech Stack
 
-- [Next.js 14](https://nextjs.org/) — App Router
-- [TypeScript](https://www.typescriptlang.org/)
+- [Next.js 14](https://nextjs.org/) App Router + TypeScript
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Lucide React](https://lucide.dev/) — Icons
-- [Framer Motion](https://www.framer.com/motion/) — ready to use for animations
+- [Lucide React](https://lucide.dev/) icons
+- [Framer Motion](https://www.framer.com/motion/) (installed, ready to use)
 
 ---
 

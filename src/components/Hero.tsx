@@ -1,7 +1,7 @@
 import { personal, stats } from "@/data/portfolio";
 import { Github, Mail } from "lucide-react";
 
-const primaryLangs = ["Rust", "Java", "Python", "Go"];
+const primaryLangs = ["Rust", "Go", "Java", "Python"];
 const secondaryLangs = ["TypeScript", "Kotlin", "C++"];
 
 export default function Hero() {
@@ -43,7 +43,10 @@ export default function Hero() {
           <br />
           <span className="text-accent">{personal.name.split(" ")[1]}</span>
         </h1>
-        <p className="mt-6 text-text-dim text-sm max-w-md leading-relaxed animate-fade-up" style={{ animationDelay: "0.2s" }}>
+        <p
+          className="mt-6 text-text-dim text-sm max-w-md leading-relaxed animate-fade-up"
+          style={{ animationDelay: "0.2s" }}
+        >
           {personal.tagline}
         </p>
         <div className="flex flex-wrap gap-3 mt-8 animate-fade-up" style={{ animationDelay: "0.3s" }}>
@@ -68,7 +71,10 @@ export default function Hero() {
       <div className="relative z-10 grid grid-cols-2 border border-border rounded-xl overflow-hidden bg-surface divide-x divide-y divide-border">
         {stats.map((s) => (
           <div key={s.label} className="p-7 hover:bg-[#161622] transition-colors">
-            <div className="font-display font-extrabold text-accent" style={{ fontSize: "2.2rem", lineHeight: 1 }}>
+            <div
+              className="font-display font-extrabold text-accent"
+              style={{ fontSize: "2.2rem", lineHeight: 1 }}
+            >
               {s.value}
             </div>
             <div className="text-[11px] uppercase tracking-widest text-text-dim mt-2">{s.label}</div>
@@ -79,12 +85,18 @@ export default function Hero() {
           <div className="text-[11px] uppercase tracking-widest text-text-dim mb-3">Primary Languages</div>
           <div className="flex flex-wrap gap-2">
             {primaryLangs.map((l) => (
-              <span key={l} className="text-[11px] px-2 py-1 rounded bg-accent/8 text-accent border border-accent/15">
+              <span
+                key={l}
+                className="text-[11px] px-2 py-1 rounded bg-accent/[0.08] text-accent border border-accent/[0.15]"
+              >
                 {l}
               </span>
             ))}
             {secondaryLangs.map((l) => (
-              <span key={l} className="text-[11px] px-2 py-1 rounded bg-accent2/8 text-accent2 border border-accent2/15">
+              <span
+                key={l}
+                className="text-[11px] px-2 py-1 rounded bg-accent2/[0.08] text-accent2 border border-accent2/[0.15]"
+              >
                 {l}
               </span>
             ))}

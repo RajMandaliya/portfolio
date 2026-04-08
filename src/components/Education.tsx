@@ -15,7 +15,10 @@ export default function Education() {
             <div className="text-text-dim text-xs mt-1">{edu.year}</div>
             <div className="flex flex-wrap gap-2 mt-5">
               {edu.courses.map((c) => (
-                <span key={c} className="text-[11px] px-2 py-1 rounded border border-border bg-white/[0.03] text-text-dim">
+                <span
+                  key={c}
+                  className="text-[11px] px-2 py-1 rounded border border-border bg-white/[0.03] text-text-dim"
+                >
                   {c}
                 </span>
               ))}

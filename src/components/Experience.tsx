@@ -21,14 +21,20 @@ export default function Experience() {
             </div>
             <ul className="md:col-span-2 mt-2 flex flex-col gap-2">
               {job.bullets.map((b, i) => (
-                <li key={i} className="text-text-dim text-sm leading-relaxed pl-4 relative before:content-['▸'] before:absolute before:left-0 before:text-accent">
+                <li
+                  key={i}
+                  className="text-text-dim text-sm leading-relaxed pl-4 relative before:content-['▸'] before:absolute before:left-0 before:text-accent"
+                >
                   {b}
                 </li>
               ))}
             </ul>
             <div className="md:col-span-2 flex flex-wrap gap-2 mt-2">
               {job.tags.map((t) => (
-                <span key={t} className="text-[11px] px-2 py-1 rounded border border-border bg-white/[0.03] text-text-dim">
+                <span
+                  key={t}
+                  className="text-[11px] px-2 py-1 rounded border border-border bg-white/[0.03] text-text-dim"
+                >
                   {t}
                 </span>
               ))}

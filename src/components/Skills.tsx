@@ -9,14 +9,16 @@ export default function Skills() {
         {skills.map((group) => (
           <div
             key={group.category}
-            className={`bg-surface border border-border rounded-xl p-7 ${group.category === "Concepts" ? "lg:col-span-3" : ""}`}
+            className={`bg-surface border border-border rounded-xl p-7 ${
+              group.category === "Concepts" ? "lg:col-span-3" : ""
+            }`}
           >
             <div className="text-[11px] uppercase tracking-widest text-accent mb-4">{group.category}</div>
             <div className="flex flex-wrap gap-2">
               {group.items.map((item) => (
                 <span
                   key={item}
-                  className="text-sm px-3 py-1.5 rounded-md border border-border bg-white/[0.03] text-text-dim hover:bg-accent/7 hover:border-accent/20 hover:text-accent transition-all cursor-default"
+                  className="text-sm px-3 py-1.5 rounded-md border border-border bg-white/[0.03] text-text-dim hover:bg-accent/[0.07] hover:border-accent/20 hover:text-accent transition-all cursor-default"
                 >
                   {item}
                 </span>
