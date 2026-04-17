@@ -64,7 +64,7 @@ export const projects = [
     lang: "Python",
     stars: 0,
     period: "2025",
-    url: "https://github.com/RajMandaliya/anomaly-detection",
+    url: "https://github.com/RajMandaliya/anomaly-stream-detector",
     tags: ["Kafka", "PyOD", "FastAPI", "WebSocket", "PostgreSQL", "Docker", "Python"],
   },
   {
