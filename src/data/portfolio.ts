@@ -6,13 +6,13 @@ export const personal = {
   name: "Raj Mandaliya",
   title: "Software Engineer",
   tagline:
-    "Specializing in systems programming and distributed infrastructure — building high-performance microservices in Rust and Go for data-intensive workloads at cloud scale.",
-  email: "rajmandaliya2249@gmail.com",
+    "Specializing in systems programming, distributed infrastructure, and production AI engineering — building high-performance Rust services, event-driven Kafka pipelines, and end-to-end ML systems at cloud scale.",
+  email: "rajmandaliyasurvey@gmail.com",
   phone: "+1 201-626-0902",
   location: "Los Angeles, CA",
   github: "https://github.com/RajMandaliya",
   blog: "https://dev.to/rajmandaliya",
-  linkedin: "", // Add your LinkedIn URL here
+  linkedin: "https://linkedin.com/in/raj-mandaliya-78a622249",
   available: true,
 };
 
@@ -20,7 +20,7 @@ export const stats = [
   { value: "10M+", label: "Requests/Day Handled" },
   { value: "99.99%", label: "Uptime Maintained" },
   { value: "<50ms", label: "p95 Latency at CF" },
-  { value: "40%", label: "Incidents Reduced" },
+  { value: "156", label: "Tests Passing" },
 ];
 
 export const experience = [
@@ -57,6 +57,36 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    name: "anomaly-detection",
+    description:
+      "Real-time anomaly detection pipeline ingesting three live Kafka streams — server metrics, financial transactions, and IoT sensors. Every event scored by a PyOD ensemble (IForest + LOF + HBOS) with majority voting. Anomalies surfaced via FastAPI REST + WebSocket feed, persisted to PostgreSQL. 44 pytest tests passing.",
+    lang: "Python",
+    stars: 0,
+    period: "2025",
+    url: "https://github.com/RajMandaliya/anomaly-detection",
+    tags: ["Kafka", "PyOD", "FastAPI", "WebSocket", "PostgreSQL", "Docker", "Python"],
+  },
+  {
+    name: "data-chat-agent",
+    description:
+      "LLM-powered data analyst agent built on LangChain ReAct. Upload any CSV and ask questions in plain English — the agent picks from three custom tools: PandasTool for queries, PlotlyTool for charts, and StatsTool for outlier detection and trend analysis. Conversation memory enables natural follow-ups. 56 pytest tests passing.",
+    lang: "Python",
+    stars: 0,
+    period: "2025",
+    url: "https://github.com/RajMandaliya/data-chat-agent",
+    tags: ["LangChain", "GPT-4o", "Pandas", "Plotly", "Streamlit", "FastAPI", "Python"],
+  },
+  {
+    name: "stock-dashboard",
+    description:
+      "Real-time stock and crypto dashboard streaming live prices for 8 assets via FastAPI WebSockets with Redis caching. LSTM model (TensorFlow) trained per asset for 7-day price forecasting with confidence bands. Plotly frontend renders candlestick charts, SMA20 overlay, volume bars, and forecast panel. 56 pytest tests passing.",
+    lang: "Python",
+    stars: 0,
+    period: "2025",
+    url: "https://github.com/RajMandaliya/stock-dashboard",
+    tags: ["FastAPI", "WebSockets", "LSTM", "TensorFlow", "Plotly", "Redis", "Python"],
+  },
   {
     name: "mini-agent",
     description:
@@ -95,20 +125,24 @@ export const skills = [
     items: ["Rust", "Python", "Java", "C++", "JavaScript", "TypeScript", "Kotlin", "Go", "C#", "Dart"],
   },
   {
-    category: "Frameworks",
-    items: ["Tokio", "Actix Web", "Spring Boot", "Django", "Flask", "FastAPI", "React.js", "Next.js", "AngularJS"],
+    category: "Backend",
+    items: ["Tokio", "Actix Web", "Spring Boot", "FastAPI", "Django", "Flask", "JAX-RS", "Hibernate", "Pydantic", "SQLAlchemy"],
+  },
+  {
+    category: "AI / ML",
+    items: ["PyOD", "TensorFlow", "Scikit-learn", "LangChain", "LLM Agents", "GenAI", "MLflow", "Ensemble ML", "Anomaly Detection"],
+  },
+  {
+    category: "Frontend",
+    items: ["React.js", "Next.js", "AngularJS", "Streamlit", "Plotly", "WebSockets"],
   },
   {
     category: "Infrastructure",
-    items: ["Kafka", "Redis", "Kubernetes", "Docker", "Terraform", "Jenkins", "AWS", "GCP", "Azure"],
+    items: ["Kafka", "Redis", "Kubernetes", "Docker", "Terraform", "Jenkins", "AWS", "GCP", "Azure", "GitHub Actions"],
   },
   {
     category: "Databases & Storage",
-    items: ["PostgreSQL", "MySQL", "Redshift", "Snowflake", "Amazon S3", "Supabase", "CockroachDB"],
-  },
-  {
-    category: "Cloud & MLOps",
-    items: ["AWS EC2", "AWS Lambda", "AWS SageMaker", "Azure ML", "MLflow", "CI/CD", "Docker"],
+    items: ["PostgreSQL", "MySQL", "Redshift", "Snowflake", "Amazon S3", "Supabase", "CockroachDB", "SQLite"],
   },
   {
     category: "Concepts",
@@ -116,12 +150,12 @@ export const skills = [
       "Distributed Systems",
       "Microservices",
       "REST APIs",
+      "Event-Driven Architecture",
+      "Real-Time Streaming",
       "Async Programming",
       "Memory Safety",
       "Concurrency",
-      "LLM Agents",
-      "GenAI",
-      "Distributed File Systems",
+      "CI/CD",
       "Performance Analysis",
       "Edge Computing",
     ],
