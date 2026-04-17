@@ -78,16 +78,6 @@ export const projects = [
     tags: ["LangChain", "GPT-4o", "Pandas", "Plotly", "Streamlit", "FastAPI", "Python"],
   },
   {
-    name: "stock-dashboard",
-    description:
-      "Real-time stock and crypto dashboard streaming live prices for 8 assets via FastAPI WebSockets with Redis caching. LSTM model (TensorFlow) trained per asset for 7-day price forecasting with confidence bands. Plotly frontend renders candlestick charts, SMA20 overlay, volume bars, and forecast panel. 56 pytest tests passing.",
-    lang: "Python",
-    stars: 0,
-    period: "2025",
-    url: "https://github.com/RajMandaliya/stock-dashboard",
-    tags: ["FastAPI", "WebSockets", "LSTM", "TensorFlow", "Plotly", "Redis", "Python"],
-  },
-  {
     name: "mini-agent",
     description:
       "Rust-based AI agent framework implementing the full execution loop (plan → act → observe). Modular tool system with dynamic tool integration, async architecture for multi-step task execution. Published as a reusable library.",
