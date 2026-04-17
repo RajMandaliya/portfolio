@@ -3,7 +3,7 @@ import SectionHeader from "./SectionHeader";
 import { Mail, Github, BookOpen, Phone } from "lucide-react";
 
 const contactLinks = [
-  { icon: Mail, label: "Email", value: "rajmandaliya2249@gmail.com", href: "mailto:rajmandaliya2249@gmail.com" },
+  { icon: Mail, label: "Email", value: "rajmandaliyasurvey@gmail.com", href: "mailto:rajmandaliyasurvey@gmail.com" },
   { icon: Github, label: "GitHub", value: "github.com/RajMandaliya", href: "https://github.com/RajMandaliya" },
   { icon: BookOpen, label: "Blog", value: "dev.to/rajmandaliya", href: "https://dev.to/rajmandaliya" },
   { icon: Phone, label: "Phone", value: "+1 201-626-0902", href: "tel:+12016260902" },
