@@ -43,7 +43,7 @@ export const experience = [
   {
     company: "Razorpay",
     role: "Software Engineer II",
-    period: "Jun 2022 — Jul 2023",
+    period: "Jun 2022 — Dec 2023",
     location: "Mumbai, India",
     bullets: [
       "Engineered OAuth2, TLS, and SQL injection defenses for high-throughput payment backends on Java, Spring Boot, and AWS; safeguarded 2,000+ active users with 99.99% uptime.",
