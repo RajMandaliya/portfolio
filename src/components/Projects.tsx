@@ -20,7 +20,7 @@ export default function Projects() {
 
             <div className="flex justify-between items-start relative">
               <div className="flex items-center gap-2 text-accent2 text-[11px] uppercase tracking-widest">
-                <span className="w-2 h-2 rounded-full bg-accent2 inline-block" />
+                <span className="w-2 h-2 rounded-full bg-yellow-400 inline-block" />
                 {p.lang}
               </div>
               <ExternalLink size={14} className="text-text-dim group-hover:text-accent transition-colors" />

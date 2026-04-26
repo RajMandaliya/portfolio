@@ -34,8 +34,7 @@ export default function Contact() {
             <span className="text-accent">something.</span>
           </h2>
           <p className="text-text-dim text-sm mt-4 leading-relaxed max-w-sm">
-            Open to infrastructure, systems, and AI/ML storage roles. Whether it&apos;s Rust, distributed systems, or
-            cloud-scale services — let&apos;s talk.
+            Open to SDE II / SDE III roles in systems engineering and backend infrastructure. Whether it&apos;s Rust, distributed systems, or high-performance computing — let&apos;s talk.
           </p>
           <a
             href={`mailto:${personal.email}`}

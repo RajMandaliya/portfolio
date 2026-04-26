@@ -6,7 +6,7 @@ export const personal = {
   name: "Raj Mandaliya",
   title: "Software Engineer",
   tagline:
-    "Specializing in systems programming, distributed infrastructure, and production AI engineering — building high-performance Rust services, event-driven Kafka pipelines, and end-to-end ML systems at cloud scale.",
+    "Specializing in systems programming, distributed infrastructure, and high-performance computing — building custom CPU emulators, Rust-based edge services processing 10M+ requests daily, and event-driven fintech pipelines.",
   email: "rajmandaliyasurvey@gmail.com",
   phone: "+1 201-626-0902",
   location: "Los Angeles, CA",
@@ -20,7 +20,7 @@ export const stats = [
   { value: "10M+", label: "Requests/Day Handled" },
   { value: "99.99%", label: "Uptime Maintained" },
   { value: "<50ms", label: "p95 Latency at CF" },
-  { value: "156", label: "Tests Passing" },
+  { value: "205", label: "Tests Passing" },
 ];
 
 export const experience = [
@@ -58,6 +58,26 @@ export const experience = [
 
 export const projects = [
   {
+    name: "cpu16",
+    description:
+      "Custom 16-bit CPU emulator built from first principles in Rust. Includes a hand-designed 35-instruction ISA with fixed-width encoding, a two-pass assembler with forward-reference resolution, a 5-stage in-order pipeline (IF→ID→EX→MEM→WB) with RAW data hazard stall detection and 2-cycle branch flush, and a direct-mapped write-through L1 cache simulation classifying misses as cold vs conflict. Six assembly programs included: bubble sort, binary search, Sieve of Eratosthenes, RPN stack calculator, Fibonacci, and Factorial. 49 integration tests · 5 versioned releases · CI: fmt + clippy + test on every push.",
+    lang: "Rust",
+    stars: 0,
+    period: "2024 — 2025",
+    url: "https://github.com/RajMandaliya/cpu16",
+    tags: ["Rust", "CPU Architecture", "Pipeline Simulation", "Cache Modeling", "ISA Design", "Assembler"],
+  },
+  {
+    name: "mini-agent",
+    description:
+      "Rust-based AI agent framework implementing the full execution loop (plan → act → observe). Modular tool system with dynamic tool integration, async architecture for multi-step task execution. Published as a reusable library on crates.io.",
+    lang: "Rust",
+    stars: 12,
+    period: "Jan 2025 — May 2025",
+    url: "https://github.com/RajMandaliya/mini-agent",
+    tags: ["Rust", "Tokio", "AI Agents", "Async", "LLM"],
+  },
+  {
     name: "anomaly-detection",
     description:
       "Real-time anomaly detection pipeline ingesting three live Kafka streams — server metrics, financial transactions, and IoT sensors. Every event scored by a PyOD ensemble (IForest + LOF + HBOS) with majority voting. Anomalies surfaced via FastAPI REST + WebSocket feed, persisted to PostgreSQL. 44 pytest tests passing.",
@@ -67,86 +87,42 @@ export const projects = [
     url: "https://github.com/RajMandaliya/anomaly-stream-detector",
     tags: ["Kafka", "PyOD", "FastAPI", "WebSocket", "PostgreSQL", "Docker", "Python"],
   },
-  {
-    name: "data-chat-agent",
-    description:
-      "LLM-powered data analyst agent built on LangChain ReAct. Upload any CSV and ask questions in plain English — the agent picks from three custom tools: PandasTool for queries, PlotlyTool for charts, and StatsTool for outlier detection and trend analysis. Conversation memory enables natural follow-ups. 56 pytest tests passing.",
-    lang: "Python",
-    stars: 0,
-    period: "2025",
-    url: "https://github.com/RajMandaliya/data-chat-agent",
-    tags: ["LangChain", "GPT-4o", "Pandas", "Plotly", "Streamlit", "FastAPI", "Python"],
-  },
-  {
-    name: "mini-agent",
-    description:
-      "Rust-based AI agent framework implementing the full execution loop (plan → act → observe). Modular tool system with dynamic tool integration, async architecture for multi-step task execution. Published as a reusable library.",
-    lang: "Rust",
-    stars: 12,
-    period: "Jan 2025 — May 2025",
-    url: "https://github.com/RajMandaliya/mini-agent",
-    tags: ["Rust", "Tokio", "AI Agents", "Async", "LLM"],
-  },
-  {
-    name: "Async-Pipeline",
-    description:
-      "Asynchronous data processing pipeline in Rust enabling concurrent execution of multiple stages. Processes 1000+ tasks concurrently with backpressure control and task coordination preventing resource exhaustion.",
-    lang: "Rust",
-    stars: 1,
-    period: "Jul 2023 — Dec 2023",
-    url: "https://github.com/RajMandaliya/Async-pipeline",
-    tags: ["Rust", "Async", "Concurrency", "Pipeline", "Futures"],
-  },
-  {
-    name: "rust-chat-server",
-    description:
-      "High-performance concurrent chat server using Tokio handling 1K+ simultaneous TCP connections at sub-100ms latency. Event-driven architecture for real-time broadcasting, stress-tested with simulated clients.",
-    lang: "Rust",
-    stars: 1,
-    period: "Oct 2021 — May 2022",
-    url: "https://github.com/RajMandaliya/rust-chat-server",
-    tags: ["Rust", "Tokio", "TCP", "Networking", "Concurrency"],
-  },
 ];
 
 export const skills = [
   {
     category: "Languages",
-    items: ["Rust", "Python", "Java", "C++", "JavaScript", "TypeScript", "Kotlin", "Go", "C#", "Dart"],
+    items: ["Rust", "Python", "Java", "C++", "JavaScript", "TypeScript", "Go"],
   },
   {
     category: "Backend",
-    items: ["Tokio", "Actix Web", "Spring Boot", "FastAPI", "Django", "Flask", "JAX-RS", "Hibernate", "Pydantic", "SQLAlchemy"],
+    items: ["Tokio", "Actix Web", "Spring Boot", "FastAPI", "JAX-RS", "Hibernate", "Django"],
   },
   {
     category: "AI / ML",
-    items: ["PyOD", "TensorFlow", "Scikit-learn", "LangChain", "LLM Agents", "GenAI", "MLflow", "Ensemble ML", "Anomaly Detection"],
-  },
-  {
-    category: "Frontend",
-    items: ["React.js", "Next.js", "AngularJS", "Streamlit", "Plotly", "WebSockets"],
+    items: ["PyOD", "TensorFlow", "Scikit-learn", "LLM Agents", "Ensemble ML"],
   },
   {
     category: "Infrastructure",
-    items: ["Kafka", "Redis", "Kubernetes", "Docker", "Terraform", "Jenkins", "AWS", "GCP", "Azure", "GitHub Actions"],
+    items: ["Kafka", "Redis", "Kubernetes", "Docker", "Terraform", "AWS", "GitHub Actions"],
   },
   {
     category: "Databases & Storage",
-    items: ["PostgreSQL", "MySQL", "Redshift", "Snowflake", "Amazon S3", "Supabase", "CockroachDB", "SQLite"],
+    items: ["PostgreSQL", "MySQL", "Redshift", "Snowflake", "Amazon S3"],
   },
   {
     category: "Concepts",
     items: [
+      "CPU Architecture",
+      "Cache Simulation",
+      "Pipeline Hazard Detection",
       "Distributed Systems",
       "Microservices",
-      "REST APIs",
       "Event-Driven Architecture",
-      "Real-Time Streaming",
-      "Async Programming",
       "Memory Safety",
       "Concurrency",
+      "Async Programming",
       "CI/CD",
-      "Performance Analysis",
       "Edge Computing",
     ],
   },
