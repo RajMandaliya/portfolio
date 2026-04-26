@@ -60,7 +60,7 @@ export const projects = [
   {
     name: "cpu16",
     description:
-      "Custom 16-bit CPU emulator built from first principles in Rust. Includes a hand-designed 35-instruction ISA with fixed-width encoding, a two-pass assembler with forward-reference resolution, a 5-stage in-order pipeline (IF→ID→EX→MEM→WB) with RAW data hazard stall detection and 2-cycle branch flush, and a direct-mapped write-through L1 cache simulation classifying misses as cold vs conflict. Six assembly programs included: bubble sort, binary search, Sieve of Eratosthenes, RPN stack calculator, Fibonacci, and Factorial. 49 integration tests · 5 versioned releases · CI: fmt + clippy + test on every push.",
+      "Custom 16-bit CPU emulator built from first principles in Rust. Includes a hand-designed 35-instruction ISA with fixed-width encoding, a two-pass assembler with forward-reference resolution, a 5-stage in-order pipeline (IF→ID→EX→MEM→WB) with RAW data hazard stall detection and 2-cycle branch flush, and a direct-mapped write-through L1 cache simulation classifying misses as cold vs conflict. Six assembly programs included: bubble sort, binary search, Sieve of Eratosthenes, RPN stack calculator, Fibonacci, and Factorial. 49 integration tests · 5 versioned releases · CI: fmt + clippy + test on every push,Includes a web-based step-through debugger (Axum backend + single-page UI) showing live register state, pipeline stages, cache line inspector, and memory hex dump.",
     lang: "Rust",
     stars: 0,
     period: "2024 — 2025",
